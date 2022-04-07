@@ -4,18 +4,21 @@ import java.util.ArrayList;
 
 public class ArrayListConsumer
 {
-    // private ??? list;
+    private ArrayList<String> list;
 
-    public ArrayListConsumer(/* TODO fill in the parameter */)
+    public ArrayListConsumer(ArrayList<String> list)
     {
         // TODO complete the constructor
+        this.list = list;
 
     }
 
     public String consume()
     {
         // TODO change the returned value
-        return "";
+        String test = list.get(0);
+        list.remove(0);
+        return test;
     }
 
 }
